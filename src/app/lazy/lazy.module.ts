@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatSliderModule} from '@angular/material/slider'; 
 import { Routes, RouterModule } from '@angular/router';
 import { LazyComponent } from './lazy-component/lazy.component.ts'
 const routes: Routes = [
@@ -8,7 +9,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
+    MatSliderModule
   ],
   declarations: [LazyComponent]
 })
